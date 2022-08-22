@@ -7,9 +7,30 @@ Documentation: https://docs.pytest.org/en/latest/
 """
 
 
-def inc(x):
-    return x + 1
+class TestClass:
+    """
+    A class that represent the testing for this solution
+    """
+    def test_A(self):
+        expected_output = "0,1,NORTH"
+        # PLACE
+        # 0, 0, NORTH
+        # MOVE
+        # REPORT
 
+    def test_B(self):
+        expected_output = "0,0,WEST"
+        # PLACE
+        # 0, 0, NORTH
+        # LEFT
+        # REPORT
 
-def test_answer():
-    assert inc(3) == 4
+    def test_C(self):
+        expected_output = "3,3,NORTH"
+        # PLACE
+        # 1, 2, EAST
+        # MOVE
+        # MOVE
+        # LEFT
+        # MOVE
+        # REPORT
